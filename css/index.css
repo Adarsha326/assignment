@@ -1,0 +1,118 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#b_div{
+    width: 70%;
+    height: 400px;
+    background-color: blueviolet;
+    margin-left: 15%;
+}
+#img_div{
+    float: right;
+    width: 35%;
+    height: 400px;
+    /* background-color: blueviolet; */
+    padding-right: 28px;
+}
+#t_div{
+    float: left;
+    width: 45%;
+    height: 200px;
+    padding: 80px;
+    /* background-color: yellowgreen; */
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    padding: 50px;
+    float: right;
+}
+nav{
+    background-color: aqua;
+    margin-top: 600px;
+    height: 50px;
+    padding-top: 25px;
+    
+}
+nav:hover{
+    background-color: blueviolet;
+}
+footer{
+    background-color: rgb(148, 140, 140);
+    width: 100%;
+    /* height: 200px; */
+
+}
+a{
+    padding: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: tomato;
+}
+#t_div2{
+    width: 30%;
+    height: 300px;
+    margin-left:35%;
+    margin-top: 10px;
+    padding: 50px;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(166, 124, 221);
+    border-radius: 30px;
+}
+button{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(10, 61, 2);
+    color: blueviolet;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px
+}
+body{
+    background-color: rgb(158, 151, 151);
+}
+#m_div{
+    width: 70%;
+    background-color: blueviolet;
+    margin-left: 15%;
+}
+h1{
+    background-color: rgb(201, 192, 192);
+}
+#f_div1{
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+    float: left;
+    font-size: 20px;
+}
+#f_div2{
+    width: 30%;
+    height: 300px;
+    float: right;
+    /* background-color: antiquewhite; */
+    margin-right: 700px;
+}
+input[type=text], input[type=password], input[type=tel], input[type=email], input[type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  #sub{
+    background-color: rgb(72, 72, 196);
+    color: black;
+  }
+  button:hover{
+    background-color: wheat;
+  }
+  #sub:hover{
+    background-color: wheat;
+    cursor:pointer;
+  }

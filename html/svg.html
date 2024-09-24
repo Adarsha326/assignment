@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html graphics</title>
+    <link rel="stylesheet" href="../css/svg.css">
+</head>
+<body style="background-color: rgb(169, 160, 160);">
+    <header>
+        <h1><center>SVG</center></h1>
+    </header>
+    <svg width="100%" height="100px" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="80px" fill="brown">
+            <animate
+            attributeName="width"
+            begin="0s"
+            dur="20s"
+            from="10"
+            to="100%"
+            repeatCount="indefinite"/>
+        </rect>
+        <text x="10" y="50" font-size="20"  fill="rgb(169, 160, 160)">SVG stands for Scalable Vector Graphics.SVG defines vector-based graphics in XML format.SVG graphics are scalable, and do not lose any quality if they are zoomed or resized.SVG is supported by all major browsers.</text> 
+        </svg>
+        <table>
+        <svg width="300px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="150" cy="100" r="5" style="fill: rgb(158, 13, 79);">
+                        <animate
+                        attributeName="r"
+                        begin="0s"
+                        dur="20s"
+                        from="5"
+                        to="100"
+                        repeatCount="indefinite"/>
+                    </circle>
+                </svg>
+
+    <svg width="300px" height="200px" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="150" cy="100" r="5" style="fill: rgb(155, 26, 155);">
+            <animate
+            attributeName="r"
+            begin="0s"
+            dur="20s"
+            from="5"
+            to="100"
+            repeatCount="indefinite"/>
+            </circle>
+     </svg>
+    <svg width="300px" height="200px" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="150" cy="100" r="5" style="fill: rgba(55, 8, 117, 0.533);">
+                <animate
+                attributeName="r"
+                begin="0s"
+                dur="20s"
+                from="5"
+                to="100"
+                repeatCount="indefinite"/>
+             </circle>
+    </svg>
+</table>
+     <svg width="10" height="500" xmlns="http://www.w3.org/2000/svg">
+        <rect width="10" height="500" style="fill: rgb(146, 10, 62);">
+            <animate
+            attributeName="height"
+            begin="2s"
+            dur="5s"
+            from="0"
+            to="100%"
+            repeatCount="indefinite"/>
+        </rect>
+     </svg>  
+     <svg width="10" height="500" xmlns="http://www.w3.org/2000/svg">
+        <rect width="10" height="500" style="fill: rgb(227, 94, 17);">
+            <animate
+            attributeName="height"
+            begin="2s"
+            dur="5s"
+            from="0"
+            to="100%"
+            repeatCount="indefinite"/>
+        </rect>
+     </svg>
+     <svg width="10" height="500" xmlns="http://www.w3.org/2000/svg">
+        <rect width="10" height="500" style="fill: rgb(37, 54, 1);">
+            <animate
+            attributeName="height"
+            begin="2s"
+            dur="5s"
+            from="0"
+            to="100%"
+            repeatCount="indefinite"/>
+        </rect>
+     </svg> 
+     <svg width="500px" height="500px" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="0" r="35" style="fill: rgba(55, 8, 117, 0.533);">
+            <animate
+            attributeName="cy"
+            begin="0s"
+            dur="3s"
+            from="0"
+            to="500"
+            repeatCount="indefinite"/>
+            <animate
+            attributeName="cx"
+            begin="0s"
+            dur="3s"
+            from="0"
+            to="500"
+            repeatCount="indefinite"/>
+         </circle>
+         <circle cx="500" cy="0" r="35" style="fill: rgba(55, 8, 117, 0.533);">
+            <animate
+            attributeName="cy"
+            begin="0s"
+            dur="3s"
+            from="500"
+            to="0"
+            repeatCount="indefinite"/>
+            <animate
+            attributeName="cx"
+            begin="0s"
+            dur="3s"
+            from="500"
+            to="0"
+            repeatCount="indefinite"/>
+         </circle>
+         <circle cx="50" cy="50" r="35" style="fill: rgb(222, 30, 71);">
+            <animate
+            attributeName="cy"
+            begin="0s"
+            dur="3s"
+            from="0"
+            to="500"
+            repeatCount="indefinite"/>
+            <animate
+            attributeName="cx"
+            begin="0s"
+            dur="3s"
+            from="500"
+            to="0"
+            repeatCount="indefinite"/>
+         </circle>
+         <circle cx="50" cy="50" r="35" style="fill: rgb(222, 30, 71);">
+            <animate
+            attributeName="cy"
+            begin="0s"
+            dur="3s"
+            from="500"
+            to="0"
+            repeatCount="indefinite"/>
+            <animate
+            attributeName="cx"
+            begin="0s"
+            dur="3s"
+            from="0"
+            to="500"
+            repeatCount="indefinite"/>
+         </circle>
+    </svg>
+    <svg width="500px" height="500px" xmlns="http://www.w3.org/2000/svg">
+        <rect id="rect" width="100" height="100" style="fill: rgb(152, 88, 5);"></rect>
+    </svg>
+    <output id="out"></output>
+    <input type="button" value="Increase Width" onclick="incWidth()"/>
+    <input type="button" value="Decrease Width" onclick="decWidth()"/>
+    <input type="button" value="Increase Height" onclick="incHeight()"/>
+    <input type="button" value="Decrease Radius" onclick="decHeight()"/>
+    <script>
+        var out = document.getElementById("out")
+        var rect = document.getElementById("rect")
+
+        function incWidth(){
+            out.value = rect.getAttribute("width")
+            var value = parseInt(out.value) + 25
+            rect.setAttribute("width", value)
+        }
+        function decWidth(){
+            out.value = rect.getAttribute("width")
+            var value = parseInt(out.value) - 25
+            rect.setAttribute("width", value)
+        }
+        function incHeight(){
+            out.value = rect.getAttribute("height")
+            var value = parseInt(out.value) + 25
+            rect.setAttribute("height", value)
+        }
+        function decHeight(){
+            out.value = rect.getAttribute("height")
+            var value = parseInt(out.value) - 25
+            rect.setAttribute("height", value)
+        }
+    </script>
+    <svg width="180px" height="180px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="nonzero" clip-rule="nonzero" d="M3 1.5C2.86193 1.5 2.75 1.61193 2.75 1.75V11.3003C2.75 11.3896 2.79769 11.4722 2.87509 11.5168L7.73381 14.3194C7.80942 14.363 7.90231 14.364 7.97886 14.3221L13.1201 11.5048C13.2002 11.4609 13.25 11.3769 13.25 11.2856V1.75C13.25 1.61193 13.1381 1.5 13 1.5H3ZM1.25 1.75C1.25 0.783502 2.0335 0 3 0H13C13.9665 0 14.75 0.783503 14.75 1.75V11.2856C14.75 11.9248 14.4015 12.5131 13.841 12.8203L8.69968 15.6375C8.16383 15.9311 7.51363 15.924 6.98434 15.6187L2.12562 12.8162C1.58382 12.5037 1.25 11.9258 1.25 11.3003V1.75ZM5 4.25C5 3.83579 5.33579 3.5 5.75 3.5H10.3654C10.7796 3.5 11.1154 3.83579 11.1154 4.25C11.1154 4.66421 10.7796 5 10.3654 5H6.5V6.71154H10.3654C10.7796 6.71154 11.1154 7.04732 11.1154 7.46154V10.3462C11.1154 10.6302 10.9549 10.8899 10.7008 11.017L8.3931 12.1708C8.18196 12.2764 7.93343 12.2764 7.72228 12.1708L5.41459 11.017C5.1605 10.8899 5 10.6302 5 10.3462V9.76923C5 9.35502 5.33579 9.01923 5.75 9.01923C6.16421 9.01923 6.5 9.35502 6.5 9.76923V9.88263L8.05769 10.6615L9.61539 9.88263V8.21154H5.75C5.33579 8.21154 5 7.87575 5 7.46154V4.25Z" fill="#000000"></path> </g></svg>
+    <svg width="180px" height="180px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.42436 0H9.57565L14.995 16H11.8276L10.8115 13H5.18855L4.17242 16H1.005L6.42436 0ZM6.20468 10H9.79533L8 4.69952L6.20468 10Z" fill="#000000"></path> </g></svg>
+    <button id="previous"><a href="../html/canvas.html">PREVIOUS</a></button>
+  <button id="home"><a href="../index.html">HOME</a></button> 
+    <footer>
+     <svg width="100%" height="500px" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="80" cy="80" r="50" style="fill:rgb(255, 0, 38)">
+            <animate
+                attributeName="r"
+                begin="0s"
+                dur="5s"
+                from="20"
+                to="90%"
+                repeatCount="indefinite"/>
+                <animate
+                attributeName="cx"
+                begin="0s"
+                dur="5s"
+                from="0"
+                to="90%"
+                repeatCount="indefinite"/>
+                <animate
+                attributeName="cy"
+                begin="0s"
+                dur="5s"
+                from="0"
+                to="90%"
+                repeatCount="indefinite"/>
+        </circle>
+        <text x="900" y="100" font-size="30" style="fill: rgb(169, 160, 160);">THIS IS ALL ABOUT SVGs</text>
+    </svg>
+   
+</footer>
+</body>
+</html>-

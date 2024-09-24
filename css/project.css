@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav:hover{
+    background-color: blueviolet;
+}
+img{
+    width: 500px;
+    height: 350px;
+}
+header{
+    background-color: bisque;
+}
+nav{
+    height: 20px;
+    padding: 25px;
+    background: fixed;
+    background-color: rgb(57, 84, 4);
+}
+a{
+    text-decoration: none;
+    color: rgb(200, 201, 170);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover{
+    color: rgb(11, 26, 138);
+    font-weight: bold;
+    font-family:cursive;
+    
+}
+table{
+    border:3px;
+    border-color: rgb(146, 121, 170);
+    border-style: solid;
+    border-collapse: collapse;
+     /* width: 60%; */
+    margin-left: 20%; 
+}
+td{
+    border:3px;
+    border-color: rgb(146, 121, 170);
+    border-style: solid;
+    width: 500px;
+    width: 350;
+}
+video{
+    width: 500px;
+    height: 350px;
+}
+body{
+    background-color: antiquewhite;
+}
+#previous{
+    width: 20%;
+    height: 40px;
+    background-color: green;
+    float: left;
+}
+#next{
+    width: 20%;
+    height: 40px;
+    background-color: green;
+    float: right;
+}
+td:nth-child(even){
+    background-color: rgb(163, 212, 196);
+}
+td:nth-child(odd){
+    background-color: rgb(191, 208, 214);
+}
+th{
+    background-color: azure;
+}

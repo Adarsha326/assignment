@@ -1,0 +1,64 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+td{
+    background-color: rgb(80, 121, 121);
+}
+h1{
+    background-color: aliceblue;
+    color: brown;
+    text-align: center;
+}
+span{
+    background-color: beige;
+    font-size: 25px;
+}
+table{
+    width: 80%;
+    margin-left: 10%;
+}
+td{
+    width: 500px;
+    height: 500px;
+    font-size: 20px;
+}
+td:nth-child(3):hover{
+    background-color: rgb(159, 159, 195);
+}
+td:nth-child(3){
+    text-align: center;
+    background-color: rgb(226, 185, 131);
+}
+a{
+    font-size: 20px;
+    color: rgb(30, 17, 117);
+    text-decoration: none;
+}
+a:hover{
+    background-color: bisque;
+    color: blue;
+    font-family: fantasy;
+    font-style: italic;
+}
+th{
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(162, 148, 127);
+}
+footer{
+    background-color: rgb(234, 226, 215);
+}
+#previous{
+    width: 20%;
+    height: 40px;
+    background-color: green;
+    float: left;
+}
+#next{
+    width: 20%;
+    height: 40px;
+    background-color: green;
+    float: right;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html graphics</title>
+    <link rel="stylesheet" href="../css/canvas.css">
+</head>
+<body>
+    <header>
+        <canvas id="headCan" width="1578" height="100px"></canvas>
+        <script src="../js/canvasheader.js"></script>
+        <h1>CANVAS</h1>
+        <span><p>The HTML canvas element is used to draw graphics, on the fly, via scripting (usually JavaScript). The canvas element is only a container for graphics. You must use a script to actually draw the graphics.
+            Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p></span>
+    </header>
+    <main>
+        <table>
+            <tr><th>SCRIPT</th><th>CANVAS</th><th>FUNCTION</th></tr>
+            <tr>
+                <td>var c = document.getElementById("myCanvas1");<br>var ctx = c.getContext("2d");<br>ctx.strokeStyle="blue";<br>ctx.lineWidth=2;<br>ctx.strokeRect(100,100,150,150);<br>ctx.strokeRect(50,150,150,150);<br>ctx.moveTo(250,100);<br>ctx.lineTo(200,150);<br>ctx.moveTo(250,250);<br>ctx.lineTo(200,300);<br>ctx.moveTo(100,250);<br>ctx.lineTo(50,300);<br>ctx.moveTo(100,100);<br>ctx.lineTo(50,150);ctx.stroke();</td>
+                <td><canvas id="myCanvas1" width="500px" height="500px" style="background-color: bisque;"></canvas>
+                    <script src="../js/canvas1.js"></script>
+                </td>
+                <td><a id="gf" download="gf.png">Download</a><script src="../js/canvas1.js"></script></td>
+            </tr>
+            <tr>
+                <td>var c = document.getElementById('myCanvas2');<br>var ctx = c.getContext('2d');<br>ctx.fillStyle="Orange";<br>ctx.fillRect(10,10,200,80);<br>ctx.fillStyle="white";<br>ctx.fillRect(10,80,200,80);<br>ctx.fillStyle="green";<br>ctx.fillRect(10,160,200,80);<br>ctx.fillStyle="black";<br>ctx.fillRect(10,10,10,500)</td>
+                <td><canvas id="myCanvas2" width="500px" height="500px" style="background-color: bisque;"></canvas>
+                    <script src="../js/canvas2.js"></script></td>
+                <td><a id="gf1" download="gf.png">Download</a><script src="../js/canvas2.js"></script></td>
+            </tr>
+            <tr>
+                 <td> var c = document.getElementById("myCanvas3");<br>var ctx = c.getContext("2d");<br>const radial = ctx.createRadialGradient(190,215,25,190,215,100);<br>radial.addColorStop(0,"Lightblue");<br>radial.addColorStop(0.5,"blue");<br>radial.addColorStop(1,"green");<br>ctx.fillStyle = radial;<br>ctx.fillRect(50,150,280,160);</td>
+                 <td><canvas id="myCanvas3" width="500px" height="500px" style="background-color: bisque;"></canvas>
+                    <script src="../js/canvas3.js"></script>
+                 </td>
+                 <td> <a id="gf2" download="gf.png">Download</a><script src="../js/canvas3.js"></script></td>
+            </tr>
+        </table>
+    </main>
+    <button id="previous"><a href="../html/project.html">PREVIOUS</a></button>
+    <button id="next"><a href="../html/svg.html">NEXT</a></button>
+    <footer>
+        <svg width="100%" height="500px" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="80" cy="80" r="50" style="fill:rgb(255, 0, 38)">
+                <animate
+                    attributeName="r"
+                    begin="0s"
+                    dur="5s"
+                    from="20"
+                    to="90%"
+                    repeatCount="indefinite"/>
+                    <animate
+                    attributeName="cx"
+                    begin="0s"
+                    dur="5s"
+                    from="0"
+                    to="90%"
+                    repeatCount="indefinite"/>
+                    <animate
+                    attributeName="cy"
+                    begin="0s"
+                    dur="5s"
+                    from="0"
+                    to="90%"
+                    repeatCount="indefinite"/>
+            </circle>
+            <text x="600" y="100" font-size="30" style="fill:antiquewhite;">CANVAS demonstrated with providing a download option for the img created</text>
+        </svg>
+    </footer>
+</body>
+</html>
